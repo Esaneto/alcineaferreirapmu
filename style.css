@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body *{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+:root{
+  --text-mode: white;
+  --surface-color: rgba(32, 32, 32, 0.549);
+  --stroke-color: rgba(122, 122, 122, 0.393);
+  --bg-url: url(./assets/assets/bg-mobile.jpg);
+  --switch-bg-url: url(./assets/assets/moon-stars.svg);
+}
+.light{
+  --text-mode: black;
+  --surface-color: rgba(122, 122, 122, 0.393);
+  --stroke-color: rgba(32, 32, 32, 0.549);
+  --bg-url: url(./assets/assets/bg-mobile-light.jpg);
+  --switch-bg-url: url(./assets/assets/sun.svg);
+}
+.light #switch button{
+  right: 0;
+  left: initial;
+}
+body{
+  /*
+  background-image: url(assets/assets/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  */
+
+  /*background: color image repeat position/size */
+
+  background: white var(--bg-url) no-repeat top center/cover;
+
+}
+#container{
+  width: 360px;
+  margin: auto;
+  padding: 0 24px;
+  padding-top: 56px;
+
+}
+#profile{
+  text-align: center;
+  padding: 24px;
+}
+#profile p {
+  color: var(--text-mode);
+  padding-top: 8px;
+}
+#profile img{
+  width: 112px;
+  
+}
+#switch{
+position: relative;
+width: 64px;
+margin: 4px auto;
+}
+#switch button{
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+#switch span{
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--stroke-color);
+  border: 1px solid;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+#social-links{
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 24px 0;
+  font-size: 24px;
+
+}
+#social-links a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%;
+}
+#social-links a:hover{
+  background: var(--stroke-color);
+
+}
+ion-icon{
+  color: var(--text-mode);
+}
+a{
+  padding: 5px;
+  text-decoration: none;
+}
+ul li a:hover{
+border-radius: 10px;
+background-color: var(--stroke-color);
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+  
+}
+
+ul li a{
+  color: var(--text-mode);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  
+  background-color: var(--surface-color);
+  border: 1px solid var(--text-mode);
+  border-radius: 8px;
+  
+}
+footer{
+  color: var(--text-mode);
+  text-align: center;
+  text-decoration: none;
+  padding: 24px 0;
+  font-size: 14px;
+}
+footer a{
+  color: var(--text-mode);
+}
+footer a:hover{
+  background: var(--stroke-color);
+  border-radius: 8px;
+}
