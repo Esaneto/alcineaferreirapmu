@@ -22,7 +22,7 @@ Projeto Original abaixo.
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
+  <img alt="projeto DevLinks" src="./assets/assets/devlink.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
